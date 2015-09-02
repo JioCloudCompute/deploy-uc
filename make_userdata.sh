@@ -62,7 +62,7 @@ if [ -n "${puppet_modules_source_repo}" ]; then
   cp -Rvf /tmp/rjil/hiera/data /etc/puppet/hiera.overrides
   mkdir -p /etc/puppet/modules.overrides/rjil
   cp -Rvf /tmp/rjil/* /etc/puppet/modules.overrides/rjil/
-  cp -av ./${env}.yaml /etc/puppet/hiera.overrides/data/env/
+  cp -av ./${env}.yaml /etc/puppet/hiera/data/env/
   if [ -n "${module_git_cache}" ]
   then
     cd /etc/puppet/modules.overrides

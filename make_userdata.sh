@@ -95,7 +95,7 @@ if [ -e /dev/disk/by-label/swap1 ] && [ `grep -cP '^LABEL=swap1[\s\t]+' /etc/fst
   echo 'LABEL=swap1 none swap sw 0 1' >> /etc/fstab
   swapon -a
 fi
-
+cp -av ./${env}.yaml /etc/puppet/hiera/data/env/
 while true
 do
   # first install all packages to make the build as fast as possible

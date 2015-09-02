@@ -72,4 +72,4 @@ export active_nic=$active_nic
 #Copy env.yaml to temp
 cp -av ./${env_name}.yaml /tmp
 #Run Userdata.sh
-#. userdata.sh
+. userdata.sh

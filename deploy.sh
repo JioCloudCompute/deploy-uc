@@ -11,20 +11,20 @@ select yn in "Yes" "No"; do
         No ) export consul_discovery_token=$(curl -s http://consuldiscovery.linux2go.dk/new);echo export consul_discovery_token=${consul_discovery_token};break;;
     esac
 done
-echo "Please Enter Data Network Interface Ex-em4"
+echo "Please Enter Data Network Interface Ex- em4"
 read data_network_interface
 export data_network_interface=$data_network_interface
 
-echo "Please Enter Data Network CIDR Ex-10.140.213.0/24"
+echo "Please Enter Data Network CIDR Ex- 10.140.213.0/24"
 read data_network_cidr
 export data_network_cidr=$data_network_cidr
-echo "Please Enter Data Network gateway Ex-10.140.213.1"
+echo "Please Enter Data Network gateway Ex- 10.140.213.1"
 read data_network_gateway
 export data_network_gateway=$data_network_gateway
-echo "Please Enter Data Network Pool Start IP Ex-10.140.213.10"
+echo "Please Enter Data Network Pool Start IP Ex- 10.140.213.10"
 read data_network_pool_start
 export data_network_pool_start=$data_network_pool_start
-echo "Please Enter Data Network Pool End IP Ex-10.140.213.90"
+echo "Please Enter Data Network Pool End IP Ex- 10.140.213.90"
 read data_network_pool_end
 export data_network_pool_end=$data_network_pool_end
 
@@ -41,7 +41,7 @@ echo "Please Enter the proxy server in the format of http://ipaddress:port"
 read proxy
 export env_http_proxy=$proxy
 export env_https_proxy=$proxy
-echo "Please Enter ip for dhcp interface Ex-10.204.213.10"
+echo "Please Enter an ip from ILO Network for the  dhcp server Ex-10.204.213.10"
 read dhcp_ip
 export dhcp_server_ip=$dhcp_ip
 echo "Please Enter ILO Network Ex-10.204.213.0"
@@ -53,7 +53,7 @@ export ilo_netmask=$ilo_netmask
 echo "Please Enter ILO Gateway Ex-10.204.213.1"
 read ilo_gateway
 export ilo_gateway=$ilo_gateway
-echo "Please Enter ILO DHCP Range Ex- 10.204.213.20 10.204.213.100"
+echo "Please Enter ILO DHCP  Range Ex- 10.204.213.20 10.204.213.100"
 read ilo_dhcp_range
 export ilo_dhcp_range=$ilo_dhcp_range
 echo "Please Enter ILO DHCP Interace EX-em1"

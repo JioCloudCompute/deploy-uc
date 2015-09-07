@@ -56,8 +56,8 @@ rjil::neutron::ovs::br_physical_interface: ${data_network_interface}
 rjil::neutron::ovs::br_name: br-ctlplane
 rjil::neutron::ovs::gateway: ${data_network_gateway}
 # Setting up gcp1 as dns server for uc for now
-rjil::neutron::ovs::nameservers: [10.140.192.34]
-rjil::neutron::network::undercloud::dns_nameservers: [10.140.192.34]
+rjil::neutron::ovs::nameservers: [<nameserver>]
+rjil::neutron::network::undercloud::dns_nameservers: [<dnsserver>]
 rjil::neutron::network::undercloud::gateway: ${data_network_gateway}
 rjil::neutron::network::undercloud::pool_start: ${data_network_pool_start}
 rjil::neutron::network::undercloud::pool_end: ${data_network_pool_end}

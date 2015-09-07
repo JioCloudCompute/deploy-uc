@@ -8,8 +8,8 @@ public_interface: "%{${public_interface}}"
 private_address: "%{${private_address}}"
 private_interface: "%{${private_interface}}"
 
-baremetal::ilo_user: provisioner
-baremetal::ilo_password: Provi@123
+baremetal::ilo_user: <ilo_username>
+baremetal::ilo_password: <ilo_password>
 
 
 rjil::ceph::osd::autogenerate: true
